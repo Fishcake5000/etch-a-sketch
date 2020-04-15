@@ -62,11 +62,7 @@ function HSLtoString(colourIndex) {
 }
 
 function darkenHSL(colourIndex) {
-    if (colourIndex[2] >= 5) {
-        colourIndex[2] = colourIndex[2] - 5;
-    } else {
-        colourIndex[2] = 0;
-    }
+    colourIndex[2] = Math.floor(colourIndex[2]*0.8);
     return colourIndex;
 }
 
