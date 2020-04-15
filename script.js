@@ -1,5 +1,9 @@
+function random(number) { //Returns a random whole n w/ 0<= n <number
+    return Math.floor(Math.random()*number);
+}
+
 function colourIn(event) {
-    event.target.style.backgroundColor = 'black';
+    event.target.style.backgroundColor = `rgb( ${random(256)}, ${random(256)}, ${random(256)} )`;
 }
 
 function resetGrid() {
