@@ -17,3 +17,6 @@ body, html {
     grid-template-rows: repeat(16, 1fr);
     grid-template-columns: repeat(16, 1fr);
 }
+.grid-square {
+    background-color: white;
+}
